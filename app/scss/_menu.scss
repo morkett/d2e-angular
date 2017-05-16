@@ -3,9 +3,12 @@
   border: $border-dev-green;
   height: 96%;
   height: calc(100% - 25px);
+  transform: translateY(25px);
   width: 100%;
   color: red;
   @include flex($justify:flex-start);
+  overflow: scroll;
+  overflow-x: hidden;
   h1, h2 {
     position: relative;
     font-size: 1.4em;
