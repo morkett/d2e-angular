@@ -42,7 +42,10 @@ table {
   border-spacing: 0; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 600; }
 
 #sideBar {
   background: radial-gradient(ellipse at center, #e3e3e3 0, #bdbdbd 100%); }
@@ -69,7 +72,9 @@ section {
   width: 100vw;
   background: url(../images/rest-3-op.jpg) center center no-repeat;
   background-size: cover;
-  z-index: 0; }
+  z-index: 0;
+  color: #fff;
+  font-family: "Raleway", sans-serif; }
 
 .content {
   position: relative;
@@ -143,3 +148,38 @@ h1 {
     width: 100%; }
     .second-nav ul li {
       opacity: .5; }
+
+.menu {
+  position: relative;
+  border: 1px solid #00C853;
+  height: 96%;
+  height: calc(100% - 25px);
+  width: 100%;
+  color: red;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  top: 0;
+  left: 0; }
+  .menu h1, .menu h2 {
+    position: relative;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    width: 80%;
+    cursor: pointer;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-right: 0;
+    border-left: 0;
+    background-color: rgba(25, 25, 25, 0.5);
+    -ms-transform: translate(0);
+        transform: translate(0);
+    padding: 15px 0;
+    margin-top: 15px; }

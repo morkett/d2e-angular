@@ -1,0 +1,6 @@
+<div class="menu" ng-repeat="menu in menu.breakfast">
+  <h1>breakfast</h1>
+  <h2>Light</h2>
+  <p ng-if="menu.type === 'light'">{{menu.name}}</p>
+  <p>{{menu.price}}</p>
+</div>

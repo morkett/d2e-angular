@@ -1,0 +1,26 @@
+.menu {
+  position: relative;
+  border: $border-dev-green;
+  height: 96%;
+  height: calc(100% - 25px);
+  width: 100%;
+  color: red;
+  @include flex($justify:flex-start);
+  h1, h2 {
+    position: relative;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    width: 80%;
+    cursor: pointer;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-right: 0;
+    border-left: 0;
+    background-color: rgba(25, 25, 25, 0.5);
+    transform: translate(0);
+    padding: 15px 0;
+    margin-top: 15px;
+  }
+}
