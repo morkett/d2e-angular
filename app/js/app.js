@@ -2,7 +2,10 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: '/states/home.html'
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'main-content@home': {templateUrl: '/states/partials/home/main.html'}
+      }
     });
 
 
@@ -11,10 +14,17 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
 
 
 
+
+
+  // $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode({
+  //   enabled: true,
+  //   requireBase: false
+  // });
   $urlRouterProvider.otherwise('/home');
 }
 
 
 angular
-.module('D2eApp', ['ui.router','ngMaterial'])
+.module('d2eApp', ['ui.router','ngMaterial'])
 .config(MainRouter);
