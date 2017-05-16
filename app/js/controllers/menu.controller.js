@@ -7,7 +7,7 @@ function MenuController(){
       info: 'gf-v-n',
       desc: 'crunchy nuts and coconut enriched with sweet superfoods, topped with fresh fruit and served with nutritious cold hemp ‘milk’ or milk of choice',
       price: 5,
-      type: light
+      type: 'light'
     },
     {
       name: 'fresh sesonal fruit salad.',
