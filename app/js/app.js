@@ -6,8 +6,15 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         '': {templateUrl: '/states/template.html'},
         'main-content@home': {templateUrl: '/states/partials/home/main.html'}
       }
+    })
+    .state('menu', {
+      url: '/menu',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'main-content@menu': {templateUrl: '/states/partials/menu/main.html'},
+        'test@menu': {templateUrl: '/states/partials/home/main.html'}
+      }
     });
-
 
 
 

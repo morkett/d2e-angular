@@ -1,4 +1,4 @@
-function MainController($interval){
+function MainController(){
   var controller = this;
   // controller.startSound = false;
   //
@@ -6,8 +6,6 @@ function MainController($interval){
   //   controller.startSound = !controller.startSound;
   // };
 
-
-  
 }
 
 
