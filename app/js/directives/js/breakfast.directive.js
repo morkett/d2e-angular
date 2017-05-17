@@ -7,6 +7,6 @@ function breakfast () {
   return {
     restrict: 'E',
 
-    templateUrl: 'js/directives/breakfast.directive.html'
+    templateUrl: 'js/directives/html/breakfast.directive.html'
   };
 }

@@ -1,0 +1,55 @@
+<div class="menu">
+  <div class="menu-inner">
+    <h1>lunch</h1>
+    <h2>{{menu.lunch[0].type}}</h2>
+    <section ng-repeat="menu in menu.lunch" ng-if="menu.type === 'salads'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.lunch[4].type}}</h2>
+    <section ng-repeat="menu in menu.lunch" ng-if="menu.type === 'raw'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.lunch[8].type}}</h2>
+    <section ng-repeat="menu in menu.lunch" ng-if="menu.type === 'cooked'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.lunch[14].type}}</h2>
+    <section ng-repeat="menu in menu.lunch" ng-if="menu.type === 'specials'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.lunch[17].type}}</h2>
+    <section ng-repeat="menu in menu.lunch" ng-if="menu.type === 'share'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.lunch[19].type}}</h2>
+    <section ng-repeat="menu in menu.lunch" ng-if="menu.type === 'sides'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+  </div>
+</div>
+
+<!-- ng-repeat="menu in menu.lunch" -->
