@@ -12,3 +12,11 @@ $content-bg-color: $white;
 //Fonts
 $main-font:'Raleway', sans-serif;
 $main-font-size: 0.8125em;
+
+//ani
+$fade-in: fade-in .2s linear forwards;
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

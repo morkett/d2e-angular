@@ -6,6 +6,15 @@ function MainController(){
   //   controller.startSound = !controller.startSound;
   // };
 
+  controller.navAni = false;
+
+
+
+  controller.toggleNav = function() {
+    controller.navAni = !controller.navAni;
+    console.log(controller.navAni);
+  };
+
 }
 
 

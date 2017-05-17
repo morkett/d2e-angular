@@ -33,6 +33,93 @@ overflow: hidden;
 }
 }
 
+.main-nav {
+position: fixed;
+top: 5vh;
+left: 10vw;
+width: 65px;
+height: 25px;
+cursor: pointer;
+// background-color: red;
+z-index: 9999;
+
+.inner-main-nav {
+  @include flex($direction:row, $justify: space-around);
+  height: 100%;
+  width: 100%;
+}
+
+h3 {
+  font-size: .7em;
+
+  transition: transform .2s linear;
+
+}
+span, span:before, span:after {
+  position: relative;
+  width: 17px;
+  height: 1px;
+  background: #fff;
+
+  transition: transform .2s linear;
+
+}
+span:before, span:after {
+  content: '';
+  position: absolute;
+  transform: translateY(-4px);
+}
+span:after {
+  transform: translateY(4px);
+
+}
+
+.inner-main-nav:hover > span {
+    transform: translateX(4px);
+
+    transition: transform .2s linear;
+
+}
+.inner-main-nav:hover > h3 {
+    transform: translateX(-2px);
+
+    transition: transform .2s linear;
+
+}
+.inner-main-nav:hover > span:after{
+    transform: translate(-4px, 4px);
+
+    transition: transform .2s linear;
+
+}
+.inner-main-nav:hover > span:before{
+    transform: translate(-4px, -4px);
+
+    transition: transform .2s linear;
+}
+
+}
+
+
+.nav-active:after {
+  content: '';
+  position: absolute;
+  z-index: 9999999;
+  height: 90vh;
+  height: calc(90vh - 50px);
+  width: 80vw;
+  top: 25px;
+  left: 0vw;
+  background: rgba(41, 41, 41, 0.95);
+  animation: $fade-in;
+
+}
+
+.opacity-0 {
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+
 .second-nav, h1 {
   margin-top: 2px;
   width: 80vw;
@@ -66,4 +153,11 @@ overflow: hidden;
 }
 h1 {
   transform: translateY(-27px);
+  transition: opacity .2s linear;
+
+}
+
+* {
+  outline: none;
+    border: 0;
 }
