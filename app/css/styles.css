@@ -379,3 +379,36 @@ h1 {
 .fade-in-menu {
   opacity: 0;
   animation: fade-in 1s linear 0.2s forwards; }
+
+.team-aside {
+  height: 100%;
+  width: 30vw;
+  border: 1px solid #0288D1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  top: 0;
+  left: 0; }
+
+.team-img {
+  width: 40%; }
+
+.team-member {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  top: 0;
+  left: 0; }
+
+.team-details-container {
+  text-align: center; }
