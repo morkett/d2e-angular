@@ -83,3 +83,8 @@
     }
   }
 }
+
+.fade-in-menu {
+  opacity: 0;
+  animation: $fade-in-menu;
+}

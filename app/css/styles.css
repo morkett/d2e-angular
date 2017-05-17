@@ -83,6 +83,11 @@ section {
   font-family: "Raleway", sans-serif;
   overflow: hidden; }
 
+.blur-container {
+  overflow: scroll;
+  height: 100%;
+  width: 100%; }
+
 .main {
   position: relative;
   background-color: rgba(41, 41, 41, 0.8);
@@ -127,7 +132,10 @@ section {
     height: 100%;
     width: 100%; }
   .main-nav h3 {
-    font-size: .7em;
+    font-size: .6em;
+    letter-spacing: .1em;
+    text-transform: lowercase;
+    font-weight: 600;
     transition: transform .2s linear; }
   .main-nav span, .main-nav span:before, .main-nav span:after {
     position: relative;
@@ -169,8 +177,9 @@ section {
   width: 80vw;
   top: 25px;
   left: 0vw;
-  background: rgba(41, 41, 41, 0.95);
-  animation: fade-in 0.2s linear forwards; }
+  background: rgba(41, 41, 41, 0.2);
+  animation: fade-in 0.2s linear forwards;
+  cursor: default; }
 
 .opacity-0 {
   opacity: 0;
@@ -206,14 +215,19 @@ section {
     width: 100%; }
     .second-nav ul li, h1 ul li {
       opacity: .5;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: opacity .2s linear; }
     .second-nav ul .active, h1 ul .active {
+      transition: opacity .2s linear;
       opacity: 1; }
 
 h1 {
   -ms-transform: translateY(-27px);
       transform: translateY(-27px);
   transition: opacity .2s linear; }
+
+.blur {
+  filter: blur(0.3em); }
 
 * {
   outline: none;
@@ -305,3 +319,7 @@ h1 {
       left: 0; }
     .menu .menu-inner section:last-of-type {
       margin-bottom: 20px; }
+
+.fade-in-menu {
+  opacity: 0;
+  animation: fade-in 1s linear 0.2s forwards; }

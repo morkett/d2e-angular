@@ -1,15 +1,16 @@
-
+<div class="blur-container" ng-class="{'blur': main.navAni}">
 <h1 ng-class="{'opacity-0': main.navAni}">Menu</h1>
-<nav class="second-nav">
+<nav class="second-nav" >
   <ul>
-    <li class="active">Breakfast</li>
-    <li>Lunch &amp; Dinner</li>
-    <li>Juices</li>
-    <li>Hot Drinks</li>
+    <li ng-class="{'active': main.showBreakfast}" ng-click="main.toggleBreakfast()">Breakfast</li>
+    <li ng-class="{'active': main.showLunch}" ng-click="main.toggleLunch()">Lunch &amp; Dinner</li>
+    <li ng-class="{'active': main.showJuice}" ng-click="main.toggleJuice()">Juices</li>
+    <li ng-class="{'active': main.showTea}" ng-click="main.toggleTea()">Hot Drinks</li>
   </ul>
 </nav>
 
-<breakfast ng-controller="MenuController as menu"></breakfast>
-<lunch ng-controller="MenuController as menu"></lunch>
-<juices ng-controller="MenuController as menu"></juices>
-<tea ng-controller="MenuController as menu"></tea>
+<breakfast ng-controller="MenuController as menu" ng-if="main.showBreakfast"></breakfast>
+<lunch ng-controller="MenuController as menu" ng-if="main.showLunch"></lunch>
+<juices ng-controller="MenuController as menu" ng-if="main.showJuice"></juices>
+<tea ng-controller="MenuController as menu" ng-if="main.showTea"></tea>
+</div>

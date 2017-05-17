@@ -1,5 +1,7 @@
 function MenuController(){
   var controller = this;
+  
+
 
   controller.breakfast = [
     {
