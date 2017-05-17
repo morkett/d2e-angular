@@ -1,10 +1,20 @@
-<nav class="main-nav" ng-click="main.toggleNav()" ng-class="{'nav-active': main.navAni}">
-  <div class="inner-main-nav">
+<nav class="main-nav" ng-class="{'nav-active': main.navAni}">
+  <div class="inner-main-nav" ng-click="main.toggleNav()">
 
   <span></span>
   <h3>menu</h3>
   </div>
+
+  <div class="nav-links" ng-if="main.navAni">
+    <ul>
+      <li><a ui-sref="home" ng-click="main.toggleNav()">about</a></li>
+      <li><a ui-sref="team" ng-click="main.toggleNav()">the team</a></li>
+      <li><a ui-sref="menu" ng-click="main.toggleNav()">menu</a></li>
+      <li><a ui-sref="contact" ng-click="main.toggleNav()">contact</a></li>
+    </ul>
+  </div>
 </nav>
+
 <main ui-view="main-content" class="main">
 
 </main>
