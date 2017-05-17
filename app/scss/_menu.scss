@@ -1,11 +1,9 @@
 .menu {
   position: relative;
-  border: $border-dev-green;
   height: 96%;
   height: calc(100% - 25px);
   transform: translateY(25px);
   width: 100%;
-  color: red;
   @include flex($justify:flex-start);
   overflow: scroll;
   overflow-x: hidden;
@@ -23,7 +21,65 @@
     border-left: 0;
     background-color: rgba(25, 25, 25, 0.5);
     transform: translate(0);
-    padding: 15px 0;
     margin-top: 15px;
+    height: auto;
+  }
+  h1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+
+  }
+  h2 {
+    padding: 0;
+    margin: 20px auto;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+
+  .info {
+    font-size: .8em;
+    display: block;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+  }
+
+  .desc {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 5px 0;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: .05em;
+    text-align: center;
+    font-weight: 300;
+    padding:0  10%;
+    text-transform: capitalize;
+  }
+
+  .price {
+    font-weight: 600;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+
+  .menu-inner {
+    width: 100%;
+
+    section{
+      min-height: auto;
+      width: 100%;
+        @include flex($justify:flex-start);
+    }
+
+    section:last-of-type {
+      margin-bottom: 20px;
+    }
   }
 }

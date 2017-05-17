@@ -27,7 +27,7 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
   //   enabled: true,
   //   requireBase: false
   // });
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/menu');
 }
 
 

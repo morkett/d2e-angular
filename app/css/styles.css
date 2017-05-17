@@ -84,7 +84,7 @@ section {
   width: 80vw;
   border-top: 25px solid black;
   border-bottom: 25px solid black;
-  overflow: scroll; }
+  overflow: hidden; }
   .main:before {
     content: "";
     display: block;
@@ -111,7 +111,8 @@ section {
   padding: 5px;
   letter-spacing: 0.1015625em;
   background: #000;
-  position: fixed; }
+  position: fixed;
+  z-index: 20; }
   .second-nav ul, h1 ul {
     display: -ms-flexbox;
     display: flex;
@@ -127,7 +128,10 @@ section {
         justify-content: space-around;
     width: 100%; }
     .second-nav ul li, h1 ul li {
-      opacity: .5; }
+      opacity: .5;
+      cursor: pointer; }
+    .second-nav ul .active, h1 ul .active {
+      opacity: 1; }
 
 h1 {
   -ms-transform: translateY(-27px);
@@ -135,13 +139,11 @@ h1 {
 
 .menu {
   position: relative;
-  border: 1px solid #00C853;
   height: 96%;
   height: calc(100% - 25px);
   -ms-transform: translateY(25px);
       transform: translateY(25px);
   width: 100%;
-  color: red;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: start;
@@ -169,5 +171,55 @@ h1 {
     background-color: rgba(25, 25, 25, 0.5);
     -ms-transform: translate(0);
         transform: translate(0);
-    padding: 15px 0;
+    margin-top: 15px;
+    height: auto; }
+  .menu h1 {
+    width: 80%;
+    margin: 0 auto;
     margin-top: 15px; }
+  .menu h2 {
+    padding: 0;
+    margin: 20px auto; }
+  .menu h3 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: .1em; }
+  .menu .info {
+    font-size: .8em;
+    display: block;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase; }
+  .menu .desc {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 5px 0;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: .05em;
+    text-align: center;
+    font-weight: 300;
+    padding: 0  10%;
+    text-transform: capitalize; }
+  .menu .price {
+    font-weight: 600;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 20px; }
+  .menu .menu-inner {
+    width: 100%; }
+    .menu .menu-inner section {
+      min-height: auto;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      top: 0;
+      left: 0; }
+    .menu .menu-inner section:last-of-type {
+      margin-bottom: 20px; }

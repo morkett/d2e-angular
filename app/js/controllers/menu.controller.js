@@ -24,7 +24,7 @@ function MenuController(){
       type: 'energetic'
     },
     {
-      name: 'raw chocolate hazelnut and banana crepe',
+      name: 'raw chocolate hazelnut & banana crepe',
       info: 'gf-v-n',
       desc: 'banana and flax pancake smothered in raw ‘nutella’ spread, fresh fruits and maple syrup',
       price: 6,
@@ -35,21 +35,21 @@ function MenuController(){
       info: 'gfo-v',
       desc: 'smashed avocado on buckwheat raw crackers or toasted sourdough, with a zinging lemon dressing, cherry tomatoes and activated pumpkin seeds',
       price: 7,
-      type: 'english'
+      type: 'open sandwich & english breakfast'
     },
     {
-      name: 'asourdough scramble',
+      name: 'sourdough scramble',
       info: 'gfo',
       desc: 'organic free range eggs scrambled with chives, turmeric and black pepper, served on toasted sourdough bread',
       price: 6,
-      type: 'english'
+      type: 'open sandwich & english breakfast'
     },
     {
-      name: 'down to earth english breakfast',
+      name: 'open sandwich & english breakfast',
       info: 'gfo-vo',
       desc: 'tamari and garlic marinated mushrooms, roasted cherry tomatoes, scrambled eggs with chives, homemade mexican style baked beans, seasonal greens and toasted sourdough served with butter or ketchup to order',
       price: 12,
-      type: 'english'
+      type: 'open sandwich & english breakfast'
     },
     {
       name: 'muffin',
