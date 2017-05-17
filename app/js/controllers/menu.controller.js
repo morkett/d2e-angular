@@ -67,7 +67,7 @@ function MenuController(){
     }
   ];
 
-  controller.lunchDinner = [
+  controller.lunch = [
     {
       name: 'kale, lemon and almond detox',
       info: 'gf-v-n',
