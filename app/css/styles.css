@@ -130,7 +130,8 @@ section {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
   .main-nav h3 {
     font-size: .6em;
     letter-spacing: .1em;
@@ -167,6 +168,27 @@ section {
     -ms-transform: translate(-4px, -4px);
         transform: translate(-4px, -4px);
     transition: transform .2s linear; }
+  .main-nav .close {
+    -ms-transform: translateX(-25px);
+        transform: translateX(-25px); }
+  .main-nav .close:after {
+    -ms-transform: translateX(25px) rotate(45deg);
+        transform: translateX(25px) rotate(45deg); }
+  .main-nav .close:before {
+    -ms-transform: translateX(25px) rotate(-45deg);
+        transform: translateX(25px) rotate(-45deg); }
+  .main-nav .inner-main-nav:hover > .close {
+    -ms-transform: translateX(-25px);
+        transform: translateX(-25px);
+    transition: transform .2s linear; }
+  .main-nav .inner-main-nav:hover > .close:after {
+    -ms-transform: translateX(25px) rotate(45deg);
+        transform: translateX(25px) rotate(45deg);
+    transition: transform .2s linear; }
+  .main-nav .inner-main-nav:hover > .close:before {
+    -ms-transform: translateX(25px) rotate(-45deg);
+        transform: translateX(25px) rotate(-45deg);
+    transition: transform .2s linear; }
 
 .nav-active:after {
   content: '';
@@ -200,14 +222,20 @@ section {
   .nav-links ul li a {
     display: block;
     text-decoration: none;
-    color: #e3e3e3;
+    color: rgba(227, 227, 227, 0.7);
     letter-spacing: .1em;
     width: 100%;
     font-size: 2em;
     text-transform: uppercase;
     text-align: center;
     margin: 40px 0;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: color .2s linear, font-weight .2s linear;
+    font-weight: 400; }
+    .nav-links ul li a:hover {
+      font-weight: 500;
+      color: #e3e3e3;
+      transition: color .2s linear, font-weight .2s linear; }
 
 .opacity-0 {
   opacity: 0;

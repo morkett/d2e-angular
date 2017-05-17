@@ -53,6 +53,7 @@ z-index: 99;
   @include flex($direction:row, $justify: space-around);
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 h3 {
@@ -88,6 +89,7 @@ span:after {
     transition: transform .2s linear;
 
 }
+
 .inner-main-nav:hover > h3 {
     transform: translateX(-2px);
 
@@ -102,6 +104,37 @@ span:after {
 }
 .inner-main-nav:hover > span:before{
     transform: translate(-4px, -4px);
+
+    transition: transform .2s linear;
+}
+
+.close {
+  transform: translateX(-25px);
+}
+
+.close:after {
+  transform: translateX(25px) rotate(45deg);
+}
+
+.close:before {
+  transform: translateX(25px) rotate(-45deg);
+}
+
+.inner-main-nav:hover > .close{
+    transform: translateX(-25px);
+
+    transition: transform .2s linear;
+
+}
+
+.inner-main-nav:hover > .close:after{
+    transform: translateX(25px) rotate(45deg);
+
+    transition: transform .2s linear;
+
+}
+.inner-main-nav:hover > .close:before{
+    transform: translateX(25px) rotate(-45deg);
 
     transition: transform .2s linear;
 }
@@ -137,7 +170,7 @@ span:after {
   ul li a {
     display: block;
     text-decoration: none;
-    color: $white;
+    color: rgba(227, 227, 227, .7);
     letter-spacing: .1em;
     width: 100%;
     font-size: 2em;
@@ -145,6 +178,14 @@ span:after {
     text-align: center;
     margin: 40px 0;
     cursor: pointer;
+    transition: color .2s linear, font-weight .2s linear;
+    font-weight: 400;
+
+    &:hover {
+      font-weight: 500;
+      color: rgba(227, 227, 227, 1);
+      transition: color .2s linear, font-weight .2s linear;
+    }
   }
 }
 
