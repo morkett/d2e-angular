@@ -1,0 +1,12 @@
+
+<h1>Team</h1>
+
+<aside ng-controller="TeamController as team" class="team-aside">
+  <div class="team-member" ng-repeat="team in team.teamMembers">
+    <img src="../images/{{team.img}}" alt="{{team.firstName}}{{team.lastName}}" class="team-img">
+    <div class="team-details-container">
+      <p>{{team.firstName}}{{team.lastName}}</p>
+      <p>{{team.role}}</p>
+    </div>
+  </div>
+</aside>

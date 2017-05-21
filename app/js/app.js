@@ -7,11 +7,25 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         'main-content@home': {templateUrl: '/states/partials/home/main.html'}
       }
     })
+    .state('team', {
+      url: '/the-team',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'main-content@team': {templateUrl: '/states/partials/team/main.html'}
+      }
+    })
     .state('menu', {
       url: '/menu',
       views: {
         '': {templateUrl: '/states/template.html'},
         'main-content@menu': {templateUrl: '/states/partials/menu/main.html'}
+      }
+    })
+    .state('contact', {
+      url: '/contact',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'main-content@contact': {templateUrl: '/states/partials/contact/main.html'}
       }
     });
 
@@ -27,7 +41,7 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
   //   enabled: true,
   //   requireBase: false
   // });
-  $urlRouterProvider.otherwise('/menu');
+  $urlRouterProvider.otherwise('/contact');
 }
 
 
