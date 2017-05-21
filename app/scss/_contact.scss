@@ -108,5 +108,5 @@
   @include flex($justify:flex-start);
   overflow: scroll;
   overflow-x: hidden;
-  z-index: 999;
+  z-index: 10;
 }
