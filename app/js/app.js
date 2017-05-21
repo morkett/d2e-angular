@@ -20,6 +20,13 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
         '': {templateUrl: '/states/template.html'},
         'main-content@menu': {templateUrl: '/states/partials/menu/main.html'}
       }
+    })
+    .state('contact', {
+      url: '/contact',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'main-content@contact': {templateUrl: '/states/partials/contact/main.html'}
+      }
     });
 
 
@@ -34,7 +41,7 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
   //   enabled: true,
   //   requireBase: false
   // });
-  $urlRouterProvider.otherwise('/menu');
+  $urlRouterProvider.otherwise('/contact');
 }
 
 

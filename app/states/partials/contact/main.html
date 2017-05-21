@@ -1,0 +1,32 @@
+
+<h1>Contact</h1>
+<div ng-controller="ContactController as contact" class="contact">
+<aside>
+  <div ng-repeat="info in contact.contactInfo">
+    <h3>{{info.enquiry}}</h3>
+    <a href="tel:{{info.phoneNum}}">{{info.phone}}</a>
+    <a href="mailto:{{info.email}}">{{info.email}}</a>
+  </div>
+  <address ng-repeat="address in contact.address">
+    <h3>{{address.enquiry}}</h3>
+    <p>{{address.address}}</p>
+  </address>
+</aside>
+
+
+<div class="map-container">
+  <nav class="contact-nav" >
+    <ul>
+      <li ng-click="contact.toggleTrain()">Train</li>
+      <li ng-click="contact.toggleBus()">Bus</li>
+      <li ng-click="contact.toggleCar()">Car</li>
+      <li ng-click="contact.toggleBike()">Bike</li>
+    </ul>
+  </nav>
+  <train class="contact-main" ng-if="contact.showTrain" ng-click="contact.toggleTrain()"></train>
+  <bus class="contact-main" ng-if="contact.showBus" ng-click="contact.toggleBus()"></bus>
+  <car class="contact-main" ng-if="contact.showCar" ng-click="contact.toggleCar()"></car>
+  <bike class="contact-main" ng-if="contact.showBike" ng-click="contact.toggleBike()"></bike>
+<map></map>
+</div>
+</div>

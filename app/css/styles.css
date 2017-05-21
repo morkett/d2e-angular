@@ -105,7 +105,7 @@ section {
     background: url("../images/rest-3-op.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(0.5em);
+    filter: blur(0.2em);
     height: 100%;
     width: 100%;
     z-index: -1; }
@@ -412,3 +412,128 @@ h1 {
 
 .team-details-container {
   text-align: center; }
+
+.contact {
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  top: 0;
+  left: 0; }
+  .contact aside {
+    width: 30vw;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center; }
+    .contact aside div {
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
+      width: 100%;
+      min-height: 15%;
+      margin: 10px 0; }
+    .contact aside h3 {
+      width: 90%;
+      height: 25px;
+      background: #000;
+      margin: 0 5%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      top: 0;
+      left: 0;
+      font-size: .8em;
+      letter-spacing: .1em; }
+    .contact aside a {
+      display: block;
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      font-size: .9em;
+      letter-spacing: .1em;
+      margin: 10px 0; }
+  .contact address p {
+    display: block;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-size: .9em;
+    letter-spacing: .1em;
+    margin: 10px 0; }
+  .contact .map-container {
+    width: 70vw;
+    height: 100%;
+    position: relative; }
+
+.contact-nav {
+  margin-top: 2px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 25px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8125em;
+  padding: 5px;
+  letter-spacing: 0.1015625em;
+  background: #000;
+  z-index: 20; }
+  .contact-nav ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    top: 0;
+    left: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%; }
+    .contact-nav ul li {
+      opacity: .5;
+      cursor: pointer;
+      transition: opacity .2s linear; }
+    .contact-nav ul .active {
+      transition: opacity .2s linear;
+      opacity: 1; }
+
+#google2 {
+  height: 100%;
+  width: 100%; }
+
+.contact-main {
+  position: absolute;
+  height: 96%;
+  background-color: rgba(41, 41, 41, 0.8);
+  height: calc(100% - 25px);
+  -ms-transform: translateY(25px);
+      transform: translateY(25px);
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 999; }
