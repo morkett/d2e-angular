@@ -1,36 +1,21 @@
-<div ng-controller="AboutController as about" class="about">
-  <section id="{{about.aboutInfo.anchor}}">
-    <h2>{{about.aboutInfo.title}}</h2>
-    <p>{{about.aboutInfo.desc}}</p>
-    <ul class="contact">
-      <li>
-        <a href="{{about.aboutInfo.codepen}}" target="_blank" class="{{about.aboutInfo.list[0]}}"></a>{{about.aboutInfo.list[0]}}</li>
-      <li>
-        <a href="{{about.aboutInfo.github}}" target="_blank" class="{{about.aboutInfo.list[1]}}"></a>{{about.aboutInfo.list[1]}}</li>
-      <li>
-        <a href="mailto:{{about.aboutInfo.email}}" class="{{about.aboutInfo.list[2]}}"></a>{{about.aboutInfo.list[2]}}</li>
-      <li>
-        <a href="images/{{about.aboutInfo.cv}}" target="_blank" class="{{about.aboutInfo.list[3]}}">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewbox="0 0 32 32">
-            <path fill="#292929" d="M27 0h-24c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h24c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM26 28h-22v-24h22v24zM8 18h14v2h-14zM8 22h14v2h-14zM10 9c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM15 12h-4c-1.65 0-3 0.9-3 2v2h10v-2c0-1.1-1.35-2-3-2z"></path>
-            </svg></a>{{about.aboutInfo.list[3]}}</li>
-    </ul>
-  </section>
-  <section id="{{about.aboutDev.anchor}}">
-    <h2>{{about.aboutDev.title}}</h2>
-    <ul class="about-icon-container">
-      <li class="about-icon" ng-repeat="list in about.aboutDev.list">
-        {{list}}
-      </li>
-    </ul>
-    <p>{{about.aboutDev.desc}}</p>
+  <h1>About</h1><h4></h4>
+<div class="blur-container about" ng-class="{'blur': main.navAni}">
+  <div class="contact-container">
+    <p>Life At Down To Earth Starts With A Gorgeous Breakfast Selection Of Super Energizing Bowls And Treats.
 
-    <h2>{{about.aboutDesign.title}}</h2>
-    <ul class="about-icon-container">
-      <li class="about-icon" ng-repeat="list in about.aboutDesign.list">
-        {{list}}
-      </li>
-    </ul>
-    <p>{{about.aboutDesign.desc}}</p>
-  </section>
+At 12:00, The Lunch Menu Is Set To Impress Even The Most Carnivorous Of Tastes.
+
+Throughout The Day We Offer An Impressive Selection Of Raw Cakes And Desserts Served With A Selection Of Organic, Biodynamic Teas Or Coffees.
+
+All Raw Cakes Do Come With A Polite Warning – You Would Rarely Feel The Need To Eat A Conventional Cake Again!
+
+For Afternoon Drinks, You May Wish To Indulge In A Selection Of Organic Wines And Beers Perfectly Accompanied With A Selection Of Small Plates To Share.
+
+We Offer A Pre-Theatre Dinner Menu Throughout The Week And A Full Dinner Menu On Friday, Saturday And Sunday. Both Have Been Set To Help You Achieve Full Satisfaction Whatever Your Dietary, Nutritional Or Indulging Appetite!</p>
+  </div>
+  <aside>
+    <h2>OPENING TIMES</h2>
+    <h3>WEEKDAYS</h3> <h4>BREAKFAST</h4> 8AM—11.30AM <h4>ALL DAY MENU</h4> 12NOON—10.30PM
+    <h3>WEEKENDS</h3> <h4>BRUNCH</h4> 10AM—4PM <h4>ALL DAY MENU</h4> 5pm-10.30pm
+  </aside>
 </div>

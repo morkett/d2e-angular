@@ -90,7 +90,7 @@ section {
 
 .main {
   position: relative;
-  background-color: rgba(41, 41, 41, 0.8);
+  background-color: rgba(41, 41, 41, 0.6);
   height: 90vh;
   width: 80vw;
   border-top: 25px solid black;
@@ -516,7 +516,7 @@ h1 {
 .contact-main {
   position: absolute;
   height: 96%;
-  background-color: rgba(41, 41, 41, 0.8);
+  background-color: rgba(41, 41, 41, 0.6);
   height: calc(100% - 25px);
   -ms-transform: translateY(25px);
       transform: translateY(25px);
@@ -569,9 +569,7 @@ h1 {
 #map_canvas {
   height: 100%;
   width: 100%;
-  margin: 0px; }
-
-#map_canvas {
+  margin: 0px;
   position: relative; }
 
 .angular-google-map-container {
@@ -580,3 +578,62 @@ h1 {
   bottom: 0;
   right: 0;
   left: 0; }
+
+.about {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  top: 0;
+  left: 0; }
+  .about .contact-container {
+    width: 70vw;
+    height: 100%; }
+    .about .contact-container img {
+      width: 25%; }
+  .about aside {
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    top: 0;
+    left: 0; }
+  .about h2, .about h3 {
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    letter-spacing: .1em;
+    height: 25px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    top: 0;
+    left: 0; }
+  .about h3 {
+    font-size: .8em; }
+  .about h4 {
+    margin: 10px 0;
+    font-weight: 500; }
+
+.home .inner-main-nav, .home span, .home span:after, .home span:before {
+  color: transparent;
+  background: black;
+  cursor: default; }
