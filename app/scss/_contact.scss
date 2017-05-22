@@ -37,6 +37,7 @@
       font-size: .9em;
       letter-spacing: .1em;
       margin: 10px 0;
+      font-weight: 500;
     }
   }
 
@@ -93,11 +94,6 @@
 
 }
 
-#google2 {
-  height: 100%;
-  width: 100%;
-}
-
 .contact-main {
   position: absolute;
   height: 96%;
@@ -109,4 +105,47 @@
   overflow: scroll;
   overflow-x: hidden;
   z-index: 10;
+}
+
+.contact h4 {
+  width: 90%;
+  height: 25px;
+  background: #000;
+  margin: 0 5%;
+  @include flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.contact .menu-inner p {
+  color: rgba(255, 255, 255, .9);
+  font-family: $main-font;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: .1em;
+  margin: 10px 5%;
+  font-weight: 500;
+  width: 90%;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+#map_canvas {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+#map_canvas {
+    position: relative;
+}
+
+.angular-google-map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

@@ -1,4 +1,4 @@
-function ContactController(){
+function ContactController($log){
   var controller = this;
 
   controller.contactInfo = [
@@ -67,7 +67,57 @@ function ContactController(){
     controller.showBike = !controller.showBike;
   };
 
+  controller.map = {
+    center: { latitude: 51.500040, longitude: -0.196268 },
+    zoom: 15 };
+
+
+
+  controller.marker = {
+    id: 0,
+    coords: {
+      latitude: 51.49893,
+      longitude: -0.199866
+    },
+    options: { draggable: false,
+      icon: '../images/mapIcon.png'
+    },
+    events: {
+      dragend: function (marker) {
+        $log.log('marker dragend');
+        var lat = marker.getPosition().lat();
+        var lon = marker.getPosition().lng();
+        $log.log(lat);
+        $log.log(lon);
+
+        controller.marker.options = {
+          draggable: true,
+          labelContent: 'lat: ' + controller.marker.coords.latitude + ' ' + 'lon: ' + controller.marker.coords.longitude,
+          labelAnchor: '100 0',
+          labelClass: 'marker-labels'
+        };
+      }
+    }
+  };
+
+  var styleArray = [
+    {
+      featureType: 'all',
+      stylers: [
+        { saturation: '-100' ,
+          gamma: '0.5' }
+      ]
+    }
+  ];
+  controller.options = {
+    styles: styleArray,
+    streetViewControl: false,
+    mapTypeControl: false
+  };
+
+
 }
+
 angular
   .module('d2eApp')
   .controller('ContactController', ContactController);

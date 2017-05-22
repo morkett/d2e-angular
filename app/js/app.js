@@ -46,5 +46,5 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
 
 
 angular
-.module('d2eApp', ['ui.router','ngMaterial'])
+.module('d2eApp', ['ui.router','ngMaterial', 'uiGmapgoogle-maps'])
 .config(MainRouter);
