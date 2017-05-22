@@ -48,7 +48,7 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
   //   enabled: true,
   //   requireBase: false
   // });
-  $urlRouterProvider.otherwise('/contact');
+  $urlRouterProvider.otherwise('/about');
 }
 
 

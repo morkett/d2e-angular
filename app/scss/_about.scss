@@ -1,0 +1,35 @@
+.about {
+  @include flex($direction:row);
+  .contact-container {
+    width: 70vw;
+    height: 100%;
+
+    img {
+      width: 25%;
+    }
+  }
+  aside {
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+    @include flex($justify:flex-start);
+  }
+  h2, h3 {
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    letter-spacing: .1em;
+    height: 25px;
+    @include flex;
+    // font-family: $main-font;
+  }
+  h3 {
+    font-size: .8em;
+  }
+  h4 {
+    margin: 10px 0;
+    font-weight: 500;
+  }
+}
