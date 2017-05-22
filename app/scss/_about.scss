@@ -1,11 +1,22 @@
 .about {
   @include flex($direction:row);
+  position: relative;
+  overflow: hidden;
   .contact-container {
-    width: 70vw;
+    width: 60vw;
     height: 100%;
+    position: relative;
+    overflow: scroll;
 
-    img {
-      width: 25%;
+
+    p {
+      padding: 50px;
+      line-height: 1.5;
+      font-size: 1.2em;
+      color: rgba(255, 255, 255, 1);
+      letter-spacing: .1em;
+      font-weight: 400;
+      text-shadow: 0px .5px #fff;
     }
   }
   aside {
@@ -27,9 +38,24 @@
   }
   h3 {
     font-size: .8em;
+    margin: 10px 0;
+    width: 80%;
   }
+
+  .weekends {
+    margin-top: 30px;
+  }
+
   h4 {
     margin: 10px 0;
     font-weight: 500;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: .9em;
+    color: rgba(255, 255, 255, .7);
+
+
   }
 }
