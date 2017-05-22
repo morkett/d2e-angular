@@ -1,6 +1,6 @@
 
 <h1>Team</h1>
-
+<div class="blur-container" ng-class="{'blur': main.navAni}">
 <aside ng-controller="TeamController as team" class="team-aside">
   <div class="team-member" ng-repeat="team in team.teamMembers">
     <img src="../images/{{team.img}}" alt="{{team.firstName}}{{team.lastName}}" class="team-img">
@@ -10,3 +10,4 @@
     </div>
   </div>
 </aside>
+</div>

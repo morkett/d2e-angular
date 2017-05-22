@@ -580,3 +580,8 @@ h1 {
   bottom: 0;
   right: 0;
   left: 0; }
+
+.home .inner-main-nav, .home span, .home span:after, .home span:before {
+  color: transparent;
+  background: black;
+  cursor: default; }

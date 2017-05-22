@@ -1,5 +1,6 @@
 
 <h1>Contact</h1>
+<div class="blur-container" ng-class="{'blur': main.navAni}">
 <div ng-controller="ContactController as contact" class="contact">
 <aside>
   <div ng-repeat="info in contact.contactInfo">
@@ -34,5 +35,6 @@
   <car class="contact-main" ng-if="contact.showCar" ng-click="contact.toggleCar()"></car>
   <bike class="contact-main" ng-if="contact.showBike" ng-click="contact.toggleBike()"></bike>
 <map></map>
+</div>
 </div>
 </div>

@@ -1,10 +1,7 @@
 function MainController(){
   var controller = this;
-  // controller.startSound = false;
-  //
-  // controller.toggleStart = function() {
-  //   controller.startSound = !controller.startSound;
-  // };
+
+  controller.homeNav = true;
 
   controller.navAni = false;
 

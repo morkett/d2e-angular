@@ -1,10 +1,17 @@
 function MainRouter ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
-      url: '/home',
+      url: '/',
       views: {
         '': {templateUrl: '/states/template.html'},
         'main-content@home': {templateUrl: '/states/partials/home/main.html'}
+      }
+    })
+    .state('about', {
+      url: '/about',
+      views: {
+        '': {templateUrl: '/states/template.html'},
+        'main-content@about': {templateUrl: '/states/partials/about/main.html'}
       }
     })
     .state('team', {
