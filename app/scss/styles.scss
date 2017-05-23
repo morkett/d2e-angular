@@ -8,3 +8,132 @@
 @import "contact";
 @import "about";
 @import "home";
+
+.homeBg:after {
+  background: url(../images/food0.png) center center no-repeat;
+  background-size: cover;
+  animation: $bg-ani;
+
+
+}
+
+.mainHomeBg {
+  &:before  {
+      @include pseudo;
+      top: 0;
+      left: 0;
+      background: url("../images/food0.png") center center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      filter: blur(.2em);
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      animation: $bg-ani;
+
+
+  }
+}
+.aboutBg:after {
+  background: url(../images/food1.png) center center no-repeat;
+  background-size: cover;
+  animation: $bg-ani;
+
+
+}
+
+.mainAboutBg {
+  &:before  {
+      @include pseudo;
+      top: 0;
+      left: 0;
+      background: url("../images/food1.png") center center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      filter: blur(.2em);
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      animation: $bg-ani;
+
+
+  }
+}
+
+.teamBg:after {
+  background: url(../images/food2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
+  animation: $bg-ani;
+
+}
+
+.mainTeamBg {
+  &:before  {
+      @include pseudo;
+      top: 0;
+      left: 0;
+      background: url("../images/food2.png") center center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      filter: blur(.2em);
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      animation: $bg-ani;
+
+
+  }
+}
+
+.menuBg:after {
+  background: url(../images/food3.png) center center no-repeat;
+  background-size: cover;
+  animation: $bg-ani;
+
+
+}
+
+.mainMenuBg {
+  &:before  {
+      @include pseudo;
+      top: 0;
+      left: 0;
+      background: url("../images/food3.png") center center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      filter: blur(.2em);
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      animation: $bg-ani;
+
+
+  }
+}
+.contactBg:after {
+  background: url(../images/food4.png) center center no-repeat;
+  background-size: cover;
+  animation: $bg-ani;
+
+
+}
+
+.mainContactBg {
+  &:before  {
+      @include pseudo;
+      top: 0;
+      left: 0;
+      background: url("../images/food4.png") center center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      filter: blur(.2em);
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      animation: $bg-ani;
+
+  }
+}
