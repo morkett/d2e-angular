@@ -118,6 +118,9 @@ function ContactController($log){
 
 }
 
+ContactController.$inject = ['$log'];
+
+
 angular
   .module('d2eApp')
   .controller('ContactController', ContactController);
