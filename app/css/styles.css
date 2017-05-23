@@ -288,6 +288,22 @@ section {
       transition: opacity .2s linear;
       opacity: 1; }
 
+@media screen and (max-width: 488px) {
+  .second-nav {
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    top: 0;
+    left: 0;
+    top: auto;
+    left: auto; } }
+
 h1 {
   -ms-transform: translateY(-27px);
       transform: translateY(-27px);
@@ -299,6 +315,17 @@ h1 {
 * {
   outline: none;
   border: 0; }
+
+@media screen and (max-width: 488px) {
+  .second-nav li {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: center !important;
+        justify-content: center !important;
+    -ms-flex-align: center !important;
+        align-items: center !important;
+    -ms-flex-direction: column !important;
+        flex-direction: column !important; } }
 
 .menu {
   position: relative;
@@ -319,6 +346,11 @@ h1 {
   left: 0;
   overflow: scroll;
   overflow-x: hidden; }
+  @media screen and (max-width: 480px) {
+    .menu {
+      height: calc(100% - 50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px); } }
   .menu h1, .menu h2 {
     position: relative;
     font-size: 1.4em;
@@ -347,6 +379,11 @@ h1 {
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: .1em; }
+    @media screen and (max-width: 480px) {
+      .menu h3 {
+        font-size: 1em;
+        padding: 0 5%;
+        text-align: center; } }
   .menu .info {
     font-size: .8em;
     display: block;
@@ -412,6 +449,12 @@ h1 {
 .team-img {
   width: 50%;
   margin-bottom: 10px; }
+  @media screen and (max-width: 948px) {
+    .team-img {
+      width: 80%; } }
+  @media screen and (max-width: 660px) {
+    .team-img {
+      width: 100%; } }
 
 .name {
   margin-bottom: 5px;
@@ -435,6 +478,10 @@ h1 {
       flex-direction: row;
   top: 0;
   left: 0; }
+  @media screen and (max-width: 799px) {
+    .team-member {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
 
 .team-details-container {
   text-align: center;
@@ -446,6 +493,14 @@ h1 {
   letter-spacing: .1em;
   font-weight: 400;
   text-shadow: 0px .5px #fff; }
+  @media screen and (max-width: 799px) {
+    .team-details-container {
+      padding: 0;
+      padding-bottom: 50px;
+      width: 90%; } }
+  @media screen and (max-width: 660px) {
+    .team-details-container {
+      width: 90%; } }
 
 .contact {
   height: 100%;
@@ -467,6 +522,9 @@ h1 {
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: center; }
+    @media screen and (max-width: 780px) {
+      .contact aside {
+        display: none; } }
     .contact aside div {
       -ms-transform: translateY(-8px);
           transform: translateY(-8px);
@@ -499,6 +557,12 @@ h1 {
       letter-spacing: .1em;
       margin: 10px 0;
       font-weight: 500; }
+      @media screen and (max-width: 990px) {
+        .contact aside a {
+          font-size: .8em; } }
+      @media screen and (max-width: 870px) {
+        .contact aside a {
+          font-size: .7em; } }
   .contact address p {
     display: block;
     color: #fff;
@@ -511,6 +575,9 @@ h1 {
     width: 70vw;
     height: 100%;
     position: relative; }
+    @media screen and (max-width: 780px) {
+      .contact .map-container {
+        width: 100vw; } }
 
 .contact-nav {
   margin-top: 2px;
@@ -525,6 +592,10 @@ h1 {
   letter-spacing: 0.1015625em;
   background: #000;
   z-index: 20; }
+  @media screen and (max-width: 780px) {
+    .contact-nav {
+      position: absolute;
+      bottom: 2px; } }
   .contact-nav ul {
     display: -ms-flexbox;
     display: flex;
@@ -568,6 +639,10 @@ h1 {
   overflow: scroll;
   overflow-x: hidden;
   z-index: 10; }
+  @media screen and (max-width: 780px) {
+    .contact-main {
+      -ms-transform: translateY(0px);
+          transform: translateY(0px); } }
 
 .contact h4 {
   width: 90%;
@@ -618,8 +693,8 @@ h1 {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   -ms-flex-direction: row;
       flex-direction: row;
   top: 0;
@@ -792,3 +867,31 @@ h1 {
   width: 100%;
   z-index: -1;
   animation: fade-in 1s linear forwards; }
+
+@media screen and (max-width: 800px) {
+  .about {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 83vh;
+    -ms-flex-pack: start;
+        justify-content: flex-start; } }
+
+@media screen and (max-width: 800px) {
+  .about .contact-container {
+    width: 100%;
+    height: 100%; } }
+
+@media screen and (max-width: 800px) {
+  .about aside {
+    display: none; } }
+
+@media screen and (max-width: 800px) {
+  .about aside h2 {
+    display: none; } }
+
+.about-scroll {
+  height: 100%; }
+  @media screen and (max-width: 800px) {
+    .about-scroll {
+      height: 80%;
+      width: 100%; } }

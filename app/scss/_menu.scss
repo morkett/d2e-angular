@@ -7,6 +7,12 @@
   @include flex($justify:flex-start);
   overflow: scroll;
   overflow-x: hidden;
+
+  @media screen and (max-width: 480px) {
+    height: calc(100% - 50px);
+    transform: translateY(50px);
+  }
+
   h1, h2 {
     position: relative;
     font-size: 1.4em;
@@ -24,6 +30,7 @@
     margin-top: 15px;
     height: auto;
   }
+
   h1 {
     width: 80%;
     margin: 0 auto;
@@ -39,6 +46,12 @@
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: .1em;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1em;
+      padding: 0 5%;
+      text-align: center;
+    }
   }
 
   .info {

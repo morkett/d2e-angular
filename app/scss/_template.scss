@@ -246,6 +246,19 @@ span:after {
 
 
 }
+
+.second-nav {
+  @media screen and (max-width: 488px) {
+    height: 50px;
+    @include flex($direction:row);
+    top: auto;
+    left: auto;
+  }
+}
+
+
+
+
 h1 {
   transform: translateY(-27px);
   transition: opacity .2s linear;
@@ -259,4 +272,13 @@ h1 {
 * {
   outline: none;
     border: 0;
+}
+
+.second-nav li {
+@media screen and (max-width: 488px) {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
 }

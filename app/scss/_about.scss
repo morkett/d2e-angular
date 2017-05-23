@@ -1,5 +1,5 @@
 .about {
-  @include flex($direction:row);
+  @include flex($direction:row, $align: flex-start);
   position: relative;
   overflow: hidden;
   .contact-container {
