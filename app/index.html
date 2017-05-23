@@ -56,11 +56,12 @@
     layout-xs="column"
     flex
     ng-controller="MainController as main"
+    ng-class="{'homeBg': main.canShowHomeBg, 'teamBg': main.canShowTeamBg, 'aboutBg': main.canShowAboutBg, 'menuBg': main.canShowMenuBg, 'contactBg': main.canShowContactBg}"
     ui-view>
 
 
     </div>
 
-    
+
 </body>
 </html>

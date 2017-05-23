@@ -1,6 +1,6 @@
 
-<h1>Contact</h1>
-<div class="blur-container" ng-class="{'blur': main.navAni}">
+<h1 ng-class="{'opacity-0': main.navAni}" ng-init="main.toggleContactBg();">Contact</h1>
+<div class="blur-container fade-in-menu" ng-class="{'blur': main.navAni}">
 <div ng-controller="ContactController as contact" class="contact">
 <aside>
   <div ng-repeat="info in contact.contactInfo">

@@ -16,6 +16,6 @@
   </div>
 </nav>
 
-<main ui-view="main-content" class="main">
+<main ui-view="main-content" class="main" ng-class="{'mainHomeBg': main.canShowHomeBg, 'mainTeamBg': main.canShowTeamBg, 'mainAboutBg': main.canShowAboutBg, 'mainMenuBg': main.canShowMenuBg, 'mainContactBg': main.canShowContactBg}">
 
 </main>
