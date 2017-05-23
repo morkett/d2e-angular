@@ -9,8 +9,10 @@
   </ul>
 </nav>
 
+<div ng-class="{'opacity-0': main.navAni}">
 <breakfast ng-controller="MenuController as menu" ng-if="main.showBreakfast"></breakfast>
 <lunch ng-controller="MenuController as menu" ng-if="main.showLunch"></lunch>
 <juices ng-controller="MenuController as menu" ng-if="main.showJuice"></juices>
 <tea ng-controller="MenuController as menu" ng-if="main.showTea"></tea>
+</div>
 </div>

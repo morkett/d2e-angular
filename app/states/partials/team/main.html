@@ -1,7 +1,7 @@
 
 <h1 ng-class="{'opacity-0': main.navAni}" ng-init="main.toggleTeamBg();">Team</h1>
-<div class="blur-container fade-in-menu" ng-class="{'blur': main.navAni}">
-<aside ng-controller="TeamController as team" class="team-aside">
+<div class="blur-container fade-in-menu">
+<aside ng-controller="TeamController as team" class="team-aside" ng-class="{'opacity-0': main.navAni}">
   <div class="team-member" ng-repeat="team in team.teamMembers">
     <div class="imgNameContainer">
     <img src="../images/{{team.img}}" alt="{{team.firstName}}{{team.lastName}}" class="team-img">
