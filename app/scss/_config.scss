@@ -4,7 +4,7 @@ $border-dev-green: 1px solid #00C853;
 
 //COLORS
 $white: #e3e3e3;
-$black: rgba(41, 41, 41, .8);
+$black: rgba(41, 41, 41, .6);
 
 $sideBar-bg--color: radial-gradient(ellipse at center,#e3e3e3 0,#bdbdbd 100%);
 $content-bg-color: $white;
@@ -12,3 +12,14 @@ $content-bg-color: $white;
 //Fonts
 $main-font:'Raleway', sans-serif;
 $main-font-size: 0.8125em;
+
+//ani
+$fade-in: fade-in .2s linear forwards;
+$fade-in-menu: fade-in 1s linear .2s forwards;
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+$bg-ani: fade-in 1s linear forwards;;

@@ -1,0 +1,170 @@
+.contact {
+  height: 100%;
+  width: 100%;
+  @include flex($direction:row, $justify: flex-start);
+
+  aside {
+    width: 30vw;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    text-align: center;
+
+    @media screen and (max-width: 780px) {
+      display: none;
+    }
+
+    div{
+      transform: translateY(-8px);
+      width: 100%;
+      min-height: 15%;
+      margin: 10px 0;
+    }
+
+    h3 {
+      width: 90%;
+      height: 25px;
+      background: #000;
+      margin: 0 5%;
+      @include flex;
+      font-size: .8em;
+      letter-spacing: .1em;
+    }
+
+    a {
+      display: block;
+      color: #fff;
+      font-family: $main-font;
+      text-decoration: none;
+      font-size: .9em;
+      letter-spacing: .1em;
+      margin: 10px 0;
+      font-weight: 500;
+
+      @media screen and (max-width: 990px) {
+        font-size: .8em;
+      }
+
+      @media screen and (max-width: 870px) {
+        font-size: .7em;
+      }
+    }
+  }
+
+  address p {
+    display: block;
+    color: #fff;
+    font-family: $main-font;
+    text-decoration: none;
+    font-size: .9em;
+    letter-spacing: .1em;
+    margin: 10px 0;
+  }
+
+  .map-container {
+    width: 70vw;
+    height: 100%;
+    position: relative;
+
+    @media screen and (max-width: 780px) {
+      width: 100vw;
+    }
+  }
+}
+
+.contact-nav {
+  margin-top: 2px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 25px;
+  text-transform: uppercase;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  padding: 5px;
+  letter-spacing: 0.1015625em;
+  background: #000;
+  z-index: 20;
+
+  @media screen and (max-width: 780px) {
+    position: absolute;
+    bottom: 2px;
+  }
+  ul {
+    @include flex($direction:row);
+    justify-content: space-around;
+    width: 100%;
+
+    li{
+      opacity: .5;
+      cursor: pointer;
+      transition: opacity .2s linear;
+
+    }
+
+    .active {
+      transition: opacity .2s linear;
+      opacity: 1;
+    }
+  }
+
+
+}
+
+.contact-main {
+  position: absolute;
+  height: 96%;
+  background-color: $black;
+  height: calc(100% - 25px);
+  transform: translateY(25px);
+  width: 100%;
+  @include flex($justify:flex-start);
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 10;
+
+  @media screen and (max-width: 780px) {
+        transform: translateY(0px);
+  }
+}
+
+.contact h4 {
+  width: 90%;
+  height: 25px;
+  background: #000;
+  margin: 0 5%;
+  @include flex;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.contact .menu-inner p {
+  color: rgba(255, 255, 255, .9);
+  font-family: $main-font;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: .1em;
+  margin: 10px 5%;
+  font-weight: 500;
+  width: 90%;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#map_canvas {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+}
+
+.angular-google-map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

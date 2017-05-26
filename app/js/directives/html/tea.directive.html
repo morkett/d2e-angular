@@ -1,0 +1,20 @@
+<div class="menu fade-in-menu">
+    <div class="menu-inner">
+    <h1>Hot Drinks</h1>
+    <h2>{{menu.teaCoffee[0].type}}</h2>
+    <section ng-repeat="menu in menu.teaCoffee" ng-if="menu.type === 'tea'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.teaCoffee[6].type}}</h2>
+    <section ng-repeat="menu in menu.teaCoffee" ng-if="menu.type === 'coffee'">
+      <h3>{{menu.name}}</h3>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+  </div>
+</div>

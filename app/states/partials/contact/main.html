@@ -1,0 +1,40 @@
+
+<h1 ng-class="{'opacity-0': main.navAni}" ng-init="main.toggleContactBg();">Contact</h1>
+<div class="blur-container fade-in-menu">
+<div ng-controller="ContactController as contact" class="contact" ng-class="{'opacity-0': main.navAni}">
+<aside>
+  <div ng-repeat="info in contact.contactInfo">
+    <h3>{{info.enquiry}}</h3>
+    <a href="tel:{{info.phoneNum}}">{{info.phone}}</a>
+    <a href="mailto:{{info.email}}">{{info.email}}</a>
+  </div>
+  <address ng-repeat="address in contact.address">
+    <h3>{{address.enquiry}}</h3>
+    <p>{{address.address}}</p>
+  </address>
+</aside>
+
+
+<div class="map-container">
+  <nav class="contact-nav" >
+    <ul>
+      <li ng-click="contact.toggleTrain()" ng-class="{'active': contact.showTrain}">Train</li>
+      <li ng-click="contact.toggleBus()" ng-class="{'active': contact.showBus}">Bus</li>
+      <li ng-click="contact.toggleCar()" ng-class="{'active': contact.showCar}">Car</li>
+      <li ng-click="contact.toggleBike()" ng-class="{'active': contact.showBike}">Bike</li>
+    </ul>
+  </nav>
+  <div id="map_canvas">
+      <ui-gmap-google-map center="contact.map.center" zoom="contact.map.zoom" draggable="true" options="contact.options">
+        <ui-gmap-marker coords="contact.marker.coords" options="contact.marker.options" events="contact.marker.events" idkey="contact.marker.id">
+       </ui-gmap-marker>
+      </ui-gmap-google-map>
+ </div>
+  <train class="contact-main" ng-if="contact.showTrain" ng-click="contact.toggleTrain()"></train>
+  <bus class="contact-main" ng-if="contact.showBus" ng-click="contact.toggleBus()"></bus>
+  <car class="contact-main" ng-if="contact.showCar" ng-click="contact.toggleCar()"></car>
+  <bike class="contact-main" ng-if="contact.showBike" ng-click="contact.toggleBike()"></bike>
+<map></map>
+</div>
+</div>
+</div>

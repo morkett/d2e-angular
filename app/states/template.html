@@ -1,2 +1,21 @@
-<main ui-view="main-content" class="content" flex="70" flex-xs="100">
+<nav class="main-nav" ng-class="{'nav-active': main.navAni}">
+  <div class="inner-main-nav" ng-click="main.toggleNav()">
+
+  <span ng-class="{'close': main.navAni}"></span>
+  <h3>menu</h3>
+  <!-- <h3 ng-if="main.navAni">close</h3> -->
+  </div>
+
+  <div class="nav-links" ng-if="main.navAni">
+    <ul>
+      <li><a ui-sref="about" ng-click="main.toggleNav()">about</a></li>
+      <li><a ui-sref="team" ng-click="main.toggleNav()">the team</a></li>
+      <li><a ui-sref="menu" ng-click="main.toggleNav()">menu</a></li>
+      <li><a ui-sref="contact" ng-click="main.toggleNav()">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main ui-view="main-content" class="main" ng-class="{'mainHomeBg': main.canShowHomeBg, 'mainTeamBg': main.canShowTeamBg, 'mainAboutBg': main.canShowAboutBg, 'mainMenuBg': main.canShowMenuBg, 'mainContactBg': main.canShowContactBg}">
+
 </main>

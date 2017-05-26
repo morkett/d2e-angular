@@ -1,2 +1,20 @@
 
-<h1>HOME</h1>
+<h1 ng-init="main.toggleHomeBg();">HOME</h1>
+<div class="home">
+<nav class="main-nav nav-active">
+  <div class="inner-main-nav" >
+
+  <span></span>
+  <h3>menu</h3>
+  </div>
+
+  <div class="nav-links">
+    <ul>
+      <li><a ui-sref="about" ng-click="main.homeNavToggle()">about</a></li>
+      <li><a ui-sref="team" ng-click="main.homeNavToggle()">the team</a></li>
+      <li><a ui-sref="menu" ng-click="main.homeNavToggle()">menu</a></li>
+      <li><a ui-sref="contact" ng-click="main.homeNavToggle()">contact</a></li>
+    </ul>
+  </div>
+</nav>
+</div>

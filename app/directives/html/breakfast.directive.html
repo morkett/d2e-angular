@@ -1,0 +1,39 @@
+<div class="menu fade-in-menu">
+  <div class="menu-inner">
+    <h1>breakfast</h1>
+    <h2>{{menu.breakfast[0].type}}</h2>
+    <section ng-repeat="menu in menu.breakfast" ng-if="menu.type === 'light'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.breakfast[3].type}}</h2>
+    <section ng-repeat="menu in menu.breakfast" ng-if="menu.type === 'energetic'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.breakfast[5].type}}</h2>
+    <section ng-repeat="menu in menu.breakfast" ng-if="menu.type === 'open sandwich &amp; english breakfast'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+    <h2>{{menu.breakfast[7].type}}</h2>
+    <section ng-repeat="menu in menu.breakfast" ng-if="menu.type === 'bites'">
+      <h3>{{menu.name}}</h3>
+      <p class="info">{{menu.info}}</p>
+      <p class="desc">{{menu.desc}}</p>
+      <p class="price">£{{menu.price}}</p>
+    </section>
+
+  </div>
+</div>
+
+<!-- ng-repeat="menu in menu.breakfast" -->
