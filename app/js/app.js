@@ -51,7 +51,7 @@ function MainRouter ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 }
 
-
+MainRouter.$inject = ['$stateProvider','$urlRouterProvider'];
 angular
 .module('d2eApp', ['ui.router','ngMaterial', 'uiGmapgoogle-maps'])
 .config(MainRouter);
